@@ -1,0 +1,18 @@
+# Mainflux MQTT end point
+brokerURL: "tls://localhost:8883"
+# ThingID
+mfxAccessUsername: '1'
+# Thing access key
+mfxAccessToken: "fd7ed98e-523a-460e-b414-03b5aa5855bb"
+# Mqtt clients to connet
+clientsCount: 10
+# Number of messages sends per client
+msgPerClientCount: 100
+# MQTT Quality of service level
+qosLevel: 0
+# Mainflux channel ID
+channelID: 1
+# Mainflux TLS ca.crt path for MQTTS
+tlsCertPath: 'tls/ca.crt'
+# SenML payload to send
+senMLPayload: '[{"bn":"some-base-name:","bt":1.276020076001e+09, "bu":"A","bver":5, "n":"voltage","u":"V","v":120.1}, {"n":"current","t":-5,"v":1.2}, {"n":"current","t":-4,"v":1.3}]'
