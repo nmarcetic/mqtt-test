@@ -4,7 +4,7 @@
 
 It supports various network protocols (i.e. HTTP, MQTT, WebSocket, CoAP), but we are interested mostly in MQTT, the IoT mostly used protocol.
 
-Performance are tested simulating real world cases, with multiple clients and messages over TLS so you can easly configure the tool regarding to your needs and measures the results. Thanks to goroutines you can simulate concurrent high load and huge number of clients and massive load.
+Performance are tested simulating real world cases, with multiple clients and messages over TLS so you can easly configure the tool regarding to your needs and measures the results. Thanks to goroutines you can simulate concurrent high load and huge number of clients.
 
 Example, how much it will take for:
 ```
