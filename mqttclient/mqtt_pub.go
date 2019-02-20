@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/eclipse/paho.mqtt.golang"
+	mqtt "github.com/eclipse/paho.mqtt.golang"
 	models "github.com/mainflux/mqtt-test/models"
 )
 
@@ -65,7 +65,7 @@ func sendMsg(mc mqtt.Client, wg *sync.WaitGroup, cfg *models.Config, clientID in
 	defer wg.Done()
 	for m := 0; m <= cfg.MsgPerClientCount; m++ {
 		fmt.Println("clientID: ", clientID, "sending on channelID: ", cfg.ChannelID, "messageID: ", m)
-		if token := mc.Publish("channels/"+strconv.Itoa(cfg.ChannelID)+"/messages", cfg.QosLevel, false, payload); token.Wait() && token.Error() != nil {
+		if token := mc.Publish("channels/"+cfg.ChannelID+"/messages", cfg.QosLevel, false, payload); token.Wait() && token.Error() != nil {
 			fmt.Printf("%s %s \n", strconv.Itoa(m), token.Error())
 		}
 	}

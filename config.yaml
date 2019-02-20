@@ -11,7 +11,7 @@ msgPerClientCount: 100
 # MQTT Quality of service level
 qosLevel: 0
 # Mainflux channel ID
-channelID: 1
+channelID: "7ed723cd-b8b7-474d-a026-8ca35ce93c7b"
 # Mainflux TLS ca.crt path for MQTTS
 tlsCertPath: 'tls/ca.crt'
 # SenML payload to send

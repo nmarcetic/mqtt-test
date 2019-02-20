@@ -14,7 +14,7 @@ type Config struct {
 	ClientsCount      int    `yaml:"clientsCount"`
 	MsgPerClientCount int    `yaml:"msgPerClientCount"`
 	QosLevel          byte   `yaml:"qosLevel"`
-	ChannelID         int    `yaml:"channelID"`
+	ChannelID         string `yaml:"channelID"`
 	SenMLPayload      string `yaml:"senMLPayload"`
 	TLSCertPath       string `yaml:"tlsCertPath"`
 }
