@@ -5,8 +5,8 @@ import (
 	"sync"
 	"time"
 
-	models "github.com/mainflux/mqtt-test/models"
-	mqttclient "github.com/mainflux/mqtt-test/mqttclient"
+	models "github.com/nmarcetic/mqtt-test/models"
+	mqttclient "github.com/nmarcetic/mqtt-test/mqttclient"
 )
 
 func main() {

@@ -11,7 +11,7 @@ import (
 	"sync"
 
 	"github.com/eclipse/paho.mqtt.golang"
-	models "github.com/mainflux/mqtt-test/models"
+	models "github.com/nmarcetic/mqtt-test/models"
 )
 
 var (
